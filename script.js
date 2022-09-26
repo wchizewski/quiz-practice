@@ -117,6 +117,14 @@ function ordinalAdjective(nOrdinal) {
 
 console.log(ordinalAdjective(9))
 
-// function minPayment(balance) {
-//     if (balance < )
-// }
+function minPayment(balance) {
+    if ((balance * 2.1) / 100 > 10) {
+        return (balance * 2.1) / 100;
+    } else if ((balance * 2.1) / 100 < 10){
+        return 10;
+    } else if (balance < 10) {
+        return balance;
+    }
+}
+
+console.log(minPayment(9))
