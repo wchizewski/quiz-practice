@@ -111,7 +111,7 @@ function ordinalAdjective(nOrdinal) {
   } else if (nOrdinal === 3) {
     return "3rd";
   } else {
-    return nOrdinal + "th";
+    return `${nOrdinal}th`;
   }
 }
 
